@@ -87,6 +87,6 @@ footer {
     background-image: url('imagens/vinho2.jpg'); 
     background-size: cover; 
     background-position: center; 
-    filter: blur(10px); 
+    filter: blur(8px); 
     z-index: -1; 
 }
