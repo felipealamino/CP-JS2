@@ -6,19 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div>
-        <h1>Faça seu login</h1>
-        <label for="usuario">Usuario:</label>
-        <input type="text" id="usuario" placeholder="Digite seu usuario aqui">
-        <button id="btnCliclar" onclick="usuario()">Confirmar</button>
-        <br>
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" placeholder="Digite sua senha aqui">
-        <button id="btnCliclar" onclick="usuario()">Confirmar</button>
-
-
-        <script src="script.js"></script>
+<body class="body1">
+    <div class="login">
+        <form>
+            <h1 class="h1painel">Faça seu login</h1>
+            <label><b>Usuario</b></label>
+            <input type="text" id="usuario" placeholder="Digite seu usuario">
+            <label><b>Senha</b></label>
+            <input type="password" id="senha" placeholder="Digite sua senha">
+            <button onclick="validarUsuario()">Confirmar</button>
+        </form>
     </div>
+<script src="script.js"></script>
 </body>
 </html>
