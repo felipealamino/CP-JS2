@@ -18,8 +18,7 @@ let carrinho = [];
         desconto = total * 0.1; // 10% de desconto
     } 
     else if (mensagem) {
-        alert('Cupom inválido!');
-        return;
+        alert('Nenhum cupom aplicado');
     }
     
     total -= desconto;
