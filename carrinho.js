@@ -12,6 +12,24 @@ let carrinho = [];
             total += item.preco;
         });
 
-        mensagem += `\nTotal: R$ ${total.toFixed(2)}`;
-        alert(mensagem);
+        let desconto = 0;
+    const cupom = prompt("Digite o cupom de desconto (se aplicável):");
+    if (cupom === "FIAP2024") {
+        desconto = total * 0.1; // 10% de desconto
+    } 
+    else if (mensagem) {
+        alert('Cupom inválido!');
+        return;
     }
+    
+    total -= desconto;
+
+    mensagem += `\nSubtotal: R$ ${total.toFixed(2)}`;
+
+    if (desconto > 0) {
+        mensagem += `\nDesconto (Cupom FIAP2024): -R$ ${desconto.toFixed(2)}`;
+    }
+
+    mensagem += `\nTotal: R$ ${(total).toFixed(2)}`;
+    alert(mensagem);
+}
