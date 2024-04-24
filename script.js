@@ -55,7 +55,7 @@ let carrinho = [];
         mensagem += `\nDesconto (Cupom FIAP2024): -R$ ${desconto.toFixed(2)}`;
     }
 
-    mensagem += `\nTotal: R$ ${(total).toFixed(2)}`;
+    mensagem += `\nTotal: R$ ${(total - desconto).toFixed(2)}`;
     alert(mensagem);
 }
 
@@ -64,3 +64,5 @@ let carrinho = [];
 function contato(){
     var contato = alert('Mensagem enviada com sucesso.')
 }
+
+
