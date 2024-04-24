@@ -41,7 +41,7 @@ let carrinho = [];
         let desconto = 0;
     const cupom = prompt("Digite o cupom de desconto (se aplicável):");
     if (cupom === "FIAP2024") {
-        desconto = total * 0.1; // 10% de desconto
+        desconto = total * 0.1;
     } 
     else if (mensagem) {
         alert('Nenhum cupom aplicado');
