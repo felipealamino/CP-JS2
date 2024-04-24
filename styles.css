@@ -105,6 +105,11 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color:rgb(36, 88, 1);
 }
 
 .aula {
@@ -132,4 +137,18 @@ button {
     text-align: center;
     color: #333;
 }
-    
+
+.carrinho {
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+.carrinho:hover {
+    background-color:rgb(36, 88, 1) ;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -40,7 +40,7 @@
                         vinho amadurece, envelhece e fica ainda melhor </i></td>
                 </tr>
             </table>
-            <button onclick="adicionar()">Adicionar ao carrinho</button>
+            <button onclick="adicionar('Vinho Cave Chardonnay', 235)">Adicionar ao carrinho</button>
 
             <hr>
             <li>Vinho Reserva Cabernet Sauvignon - R$ 97,00</li>
@@ -52,7 +52,7 @@
                         taninos harmoniosos, médio corpo e final agradável. </i></td>
                 </tr>
             </table>
-            <button onclick="adicionar()">Adicionar ao carrinho</button>
+            <button onclick="adicionar('Vinho Reserva Cabernet Sauvignon', 97)">Adicionar ao carrinho</button>
             
             <hr>
             <li>Vinho Nervi Tannat - R$ 114,99</li>
@@ -64,8 +64,7 @@
                         controlada. Tempo total de fermentação e maceração: 8 dias. </i></td>
                 </tr>
             </table>
-            <button onclick="adicionar()">Adicionar ao carrinho</button>
-
+            <button onclick="adicionar('Vinho Nervi Tannat', 114.99)">Adicionar ao carrinho</button>
             <hr>
             <ul>
     </section>
@@ -84,7 +83,7 @@
                         garrafa.</i></td>
                 </tr>
             </table>
-            <button onclick="adicionar()">Adicionar ao carrinho</button>
+            <button onclick="adicionar('Vinho Angélica Zapata Malbec Alta', 199.90)">Adicionar ao carrinho</button>
 
             <hr>
             <li>Vinho DV Catena Cabernet-Malbec - R$ 229,37</li>
@@ -97,7 +96,7 @@
                         Argentina.</i></td>
                 </tr>
             </table>
-            <button onclick="adicionar()">Adicionar ao carrinho</button>
+            <button onclick="adicionar('Vinho DV Catena Cabernet-Malbec', 229.37)">Adicionar ao carrinho</button>
             
             <hr>
             <li>Vinho Casillero del Diablo Malbec - R$ 511,90</li>
@@ -108,11 +107,13 @@
                         amora, especiarias e tostado. Bom volume, excelente equilíbrios com a madeira.</i></td>
                 </tr>
             </table>
-            <button onclick="adicionar()">Adicionar ao carrinho</button>
-
+            <button onclick="adicionar('Vinho Casillero del Diablo Malbec', 511.90)">Adicionar ao carrinho</button>
             <hr>
         </ul>
-    <section>
+    </section>
+        <br>
+        <button class="carrinho"  onclick="exibirCarrinho()">Ver Carrinho</button>
+        <br>
     <footer>
         <hr>
         <section>
@@ -135,6 +136,6 @@
         </section>
         <hr>
     </footer>
-    <script src="script.js"></script>
+    <script src="carrinho.js"></script>
 </body>
 </html>

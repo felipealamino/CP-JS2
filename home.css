@@ -7,7 +7,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 header img {
     width: 3%;
 }
@@ -89,4 +91,11 @@ footer {
     background-position: center; 
     filter: blur(8px); 
     z-index: -1; 
+}
+
+.center > p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
 }

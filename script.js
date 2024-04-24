@@ -9,11 +9,6 @@ function botao(){
     }
 }
 
-// Alert do cardapio
-function adicionar(){
-    var adicionar = alert('Produto adicionado ao carrinho.')
-}
-
 function validarUsuario() {
     var usuario = document.getElementById('usuario').value;
     var senha = document.getElementById('senha').value;
