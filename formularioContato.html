@@ -23,33 +23,29 @@
         </nav>
     </header>
     <section class="container">
-        <h1>Cadastro de Usuário</h1>
+        <h1>Formulário de contato</h1>
     </section>
     <section class="center">
         <hr>
-        <p>Insira seus dados e se torne um Amante de vinhos Agnello:</p>
+        <p>Informações para contato:</p>
         <form>
-            <div>
+
                 <label>Nome:</label>
                 <input required>
-            </div>
-            <div>
+            <br>
+
+                <label>Telefone:</label>
+                <input required>
+            <br>
                 <label>Email:</label>
                 <input required>
-            </div>
-            <div>
-                <label>Senha:</label>
-                <input required>
-            </div>
-            <div>
-                <label>Confirmar Senha:</label>
-                <input required>
-            </div>
             <br>
-            <button type="submit">Cadastrar</button>
-            <button type="reset">Limpar</button>
+                <label>Mensagem:</label>
+                <input required>
+            <br>
+            <button onclick="contato()" type="submit">Enviar</button>
         </form>
-        <br><br><br><br><br><hr><br><br><br><br>
+        <br>
     </section>
     <footer>
         <section>
@@ -71,5 +67,6 @@
         </div>
         </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
