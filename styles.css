@@ -183,3 +183,11 @@ body {
     text-align: center;
     
 }
+
+#tipo-vinho{
+    background-color:rgb(66, 61, 61);
+    color: #fff;
+    border: double;
+    cursor: pointer;
+    border-radius: 20px;
+}

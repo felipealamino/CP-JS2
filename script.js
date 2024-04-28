@@ -66,3 +66,24 @@ function contato(){
 }
 
 
+ // Receitas
+ function sugerirComida(vinho) {
+    if (vinho === 'vinho1') {
+        return 'Aconselhamos experimentar camarões, vieiras ou peixe grelhado, temperados com ervas frescas e um toque de limão. O sabor leve dos frutos do mar complementa a frescura e a acidez do Chardonnay.';
+    } else if (vinho === 'vinho2') {
+        return 'Aconselhamos experimentar um suculento bife grelhado, como contrafilé ou filé mignon, servido com um molho de ervas frescas como tomilho, alecrim e alho é uma excelente escolha. Os taninos firmes do Cabernet Sauvignon complementam a carne, enquanto as ervas realçam os sabores do vinho.';
+    } else if (vinho === 'vinho3') {
+        return 'O Tannat é uma uva emblemática do Uruguai, e não há combinação melhor do que um churrasco uruguaio para acompanhá-lo. Carnes como assado de tira, costela de boi e chorizo são grelhadas lentamente e servidas com chimichurri e molhos diversos. Os sabores intensos da carne harmonizam-se perfeitamente com a estrutura e os taninos do Tannat.';
+    } else if (vinho === 'vinho4') {
+        return ' Um assado de cordeiro patagônico, marinado em ervas e temperos locais e assado lentamente na brasa, é uma opção sofisticada e saborosa. A carne macia e suculenta do cordeiro harmoniza-se bem com a riqueza e a intensidade do Malbec. Churrasco de carne bovina com molhos picantes: Um churrasco de carne bovina, como costelas ou fraldinha, servido com molhos picantes como chimichurri ou salsa criolla, é uma combinação perfeita com o Malbec. Os sabores intensos da carne e dos molhos destacam os sabores frutados e as especiarias do vinho.';
+    } else if (vinho === 'vinho5') {
+        return 'Uma paella tradicional, feita com arroz, frutos do mar, frango, linguiça e açafrão, é uma opção deliciosa para acompanhar o Cabernet-Malbec. Os sabores complexos e variados da paella complementam a diversidade de aromas e sabores do vinho.';
+    } else if (vinho === 'vinho6') {
+        return 'Um suculento bife de chorizo argentino grelhado na brasa, temperado com sal grosso, é uma escolha clássica. A carne grelhada complementa os taninos macios do Malbec, enquanto a simplicidade do tempero realça os sabores da fruta escura.';
+    }
+}
+function mostrarSugestao() {
+    var tipoDeVinho = document.getElementById('tipo-vinho').value;
+    var sugestao = sugerirComida(tipoDeVinho);
+    document.getElementById('resultado').innerText = sugestao;
+}
